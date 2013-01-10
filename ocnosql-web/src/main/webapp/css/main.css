@@ -1,0 +1,32 @@
+.main_container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1300px;
+  //height: 150px;
+  background-color: #5A96CE;
+}
+
+.header {
+  background-image: url("./img/background.gif");
+  background-repeat: no-repeat;
+
+  background-position: 0px 0px;
+  width: 100%;
+  height: 150px;
+
+  vertical-align: text-top;
+}
+
+.brand-icon {
+  display: inline-block;
+  margin-top: -5px;
+  width: 28px;
+  height: 26px;
+  background-image: url("./img/brand.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  vertical-align: text-top;
+  line-height: 26px;
+  *margin-right: .3em;
+}

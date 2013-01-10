@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:runtime.properties"/>
+    </bean>
+
+    <bean id="JspFilter" class="com.ailk.osfc.backend.filter.JspFilter">
+        <property name="properties">
+            <props>
+                <prop key="frontendPath">${frontendPath}</prop>
+                <prop key="restPath">${restPath}</prop>
+            </props>
+        </property>
+        <property name="messageSource" ref="messageSource"/>
+    </bean>
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="classpath:ocnosql"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+</beans>
