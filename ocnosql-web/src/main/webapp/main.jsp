@@ -2,55 +2,19 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>OcNoSql管理</title>
-<link rel="stylesheet" href="${frontendPath}/lib/bootstrap/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <title>OcNoSql管理</title>
+  <link rel="stylesheet" href="${frontendPath}/lib/ztree/JQuery zTree v3.4/css/zTreeStyle/zTreeStyle.css" type="text/css"/>
+  <link rel="stylesheet" href="${frontendPath}/extend/ztree/ztree/css/zTreeStyle/zTreeStyle.css" type="text/css">
 
 </head>
 
 <body>
-
-<div class="main_container">
-
-<div class="header"></div>
-
-
-
-<!--
-<div class="container">
-    <div class="well">
--->
-
-      <div class="navbar">
-        <div class="navbar-inner">
-          <a class="brand" href="#"><i class="brand-icon"></i></a>
-          <ul class="nav">
-            <li class="divider-vertical"></li>
-            <li><a href="#">一级导航</a></li>
-            <li class="divider-vertical"></li>
-            <li class="active"><a href="#">OcNoSql管理</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">一级导航</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">一级导航</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-<!--
-    </div>
-</div>
--->
-
-
-
-</div>
-
-
-            
+<ul id="clusterTree" class="ztree"></ul>            
 <script type="text/javascript" src="${frontendPath}/lib/jquery/jquery/jquery-1.8.2.min.js"></script>
-
+<script type="text/javascript" src="${frontendPath}/lib/ztree/JQuery zTree v3.4/js/jquery.ztree.all-3.4.min.js"></script>
+<script type="text/javascript" src="${frontendPath}/core/osfc.js"></script>
+<script type="text/javascript" src="${frontendPath}/lib/json/json/json2.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
