@@ -6,7 +6,15 @@ var rootUrl = {
             var clusterId = id || -1;
             var url = "${restPath}/cluster/{clusterId}.json";
             $.rest("GET", url, {clusterId : clusterId}, function(data) {
-                console.log(data);
+
+                opt.success(
+                				         {
+                						    "id":data.clusterId,
+                							"name":data.clusterName,
+                							"isParent":true
+                						}
+                				);
+
             });
         }
 };
