@@ -6,6 +6,7 @@
 # Eclilpse Projects #
 ###################
 .project
+.setting
 
 # Maven target #
 ###################

@@ -34,6 +34,11 @@
     	<artifactId>osfc-backend</artifactId>
     	<version>V01B03C00-SNAPSHOT</version>
     </dependency>
+      <dependency>
+          <groupId>com.ailk.oci</groupId>
+          <artifactId>ocnosql-core</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+      </dependency>
     <dependency>
     	<groupId>org.slf4j</groupId>
     	<artifactId>slf4j-api</artifactId>
