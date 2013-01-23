@@ -15,7 +15,8 @@ public class ClusterController {
 	@RequestMapping(value = "/{clusterId}", method = RequestMethod.GET)
 	public @ResponseBody
 	Cluster getByClusterId(@PathVariable Long clusterId) throws Exception {
-		Cluster cluster = new Cluster();
+		System.out.println("...........getByClusterId............");
+        Cluster cluster = new Cluster();
 		cluster.setClusterId(clusterId);
 		cluster.setClusterName("OcNoSql集群一");
 
